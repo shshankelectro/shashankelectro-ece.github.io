@@ -451,31 +451,37 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
 </section>
 
 <!-- CONTACT -->
-   <form action="https://formspree.io/f/mlgvvepb" method="POST">
-<section class="section" id="contact">
-  <div class="section-inner">
-    <div class="sec-tag">03 — contact</div>
-    <div class="sec-heading">Let's <em>connect.</em></div>
-    <div class="contact-grid">
-      <div class="contact-form-wrap tilt-card" data-reveal>
-        <div class="c-field">
-          <label>your name</label>
-          <input type="text" placeholder="John Doe"/>
-        </div>
-        <div class="c-field">
-          <label>email</label>
-          <input type="email" placeholder="john@company.com"/>
-        </div>
-        <div class="c-field">
-          <label>subject</label>
-          <input type="text" placeholder="Job opportunity / Project collab"/>
-        </div>
-        <div class="c-field">
-          <label>message</label>
-          <textarea placeholder="Hi Shashank, I'd like to..."></textarea>
-        </div>
-        <button class="mag-btn mag-btn-primary" style="width:100%>send message →</button>
-          </form>
+  <div class="contact-form-wrap tilt-card" data-reveal>
+
+  <form action="https://formspree.io/f/mlgvvepb" method="POST">
+
+    <div class="c-field">
+      <label>your name</label>
+      <input type="text" name="name" placeholder="John Doe" required/>
+    </div>
+
+    <div class="c-field">
+      <label>email</label>
+      <input type="email" name="email" placeholder="john@company.com" required/>
+    </div>
+
+    <div class="c-field">
+      <label>subject</label>
+      <input type="text" name="subject" placeholder="Job opportunity / Project collab"/>
+    </div>
+
+    <div class="c-field">
+      <label>message</label>
+      <textarea name="message" placeholder="Hi Shashank, I'd like to..." required></textarea>
+    </div>
+
+    <button type="submit" class="mag-btn mag-btn-primary" style="width:100%;justify-content:center">
+      send message →
+    </button>
+
+  </form>
+
+</div>
       </div>
       <div class="contact-info-wrap" data-reveal>
         <a href="mailto:shshank732@gmail.com" class="c-link tilt-card">
