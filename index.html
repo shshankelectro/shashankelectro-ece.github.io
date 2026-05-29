@@ -451,70 +451,109 @@ footer{padding:2.5rem 3rem;border-top:1px solid var(--border);display:flex;justi
 </section>
 
 <!-- CONTACT -->
+```html
+<div class="contact-grid">
+
+  <!-- CONTACT FORM -->
   <div class="contact-form-wrap tilt-card" data-reveal>
 
-  <form action="https://formspree.io/f/mlgvvepb" method="POST">
+    <form action="https://formspree.io/f/mlgvvepb" method="POST">
 
-    <div class="c-field">
-      <label>your name</label>
-      <input type="text" name="name" placeholder="John Doe" required/>
+      <div class="c-field">
+        <label>your name</label>
+        <input type="text" name="name" placeholder="John Doe" required/>
+      </div>
+
+      <div class="c-field">
+        <label>email</label>
+        <input type="email" name="email" placeholder="john@company.com" required/>
+      </div>
+
+      <div class="c-field">
+        <label>subject</label>
+        <input type="text" name="subject" placeholder="Job opportunity / Project collab"/>
+      </div>
+
+      <div class="c-field">
+        <label>message</label>
+        <textarea name="message" placeholder="Hi Shashank, I'd like to..." required></textarea>
+      </div>
+
+      <button 
+        type="submit" 
+        class="mag-btn mag-btn-primary" 
+        style="width:100%;justify-content:center"
+      >
+        send message →
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info-wrap" data-reveal>
+
+    <!-- EMAIL -->
+    <a href="mailto:shshank732@gmail.com" class="c-link tilt-card">
+      <div class="c-link-icon">📧</div>
+      <div>
+        <div class="c-link-label">EMAIL</div>
+        <div class="c-link-val">shshank732@gmail.com</div>
+      </div>
+    </a>
+
+    <!-- LINKEDIN -->
+    <a href="https://linkedin.com/in/sha-singh/" target="_blank" class="c-link tilt-card">
+      <div class="c-link-icon">💼</div>
+      <div>
+        <div class="c-link-label">LINKEDIN</div>
+        <div class="c-link-val">linkedin.com/in/sha-singh/</div>
+      </div>
+    </a>
+
+    <!-- GITHUB -->
+    <a href="https://github.com/shshankelectro/shashankelectro-ece.github.io" target="_blank" class="c-link tilt-card">
+      <div class="c-link-icon">🐙</div>
+      <div>
+        <div class="c-link-label">GITHUB</div>
+        <div class="c-link-val">github.com/shshankelectro/shashankelectro-ece.github.io</div>
+      </div>
+    </a>
+
+    <!-- STATUS -->
+    <div class="tilt-card" style="padding:1.5rem;margin-top:.5rem">
+      <div style="font-family:'Space Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:2px;margin-bottom:.8rem">
+        // CURRENT STATUS
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:.5rem;font-size:.85rem;color:var(--muted)">
+        <div>📍 Prayagraj, Uttar Pradesh</div>
+        <div>🟢 Open to full-time / remote</div>
+        <div>⚡ Interested in embedded + cloud roles</div>
+      </div>
     </div>
 
-    <div class="c-field">
-      <label>email</label>
-      <input type="email" name="email" placeholder="john@company.com" required/>
-    </div>
-
-    <div class="c-field">
-      <label>subject</label>
-      <input type="text" name="subject" placeholder="Job opportunity / Project collab"/>
-    </div>
-
-    <div class="c-field">
-      <label>message</label>
-      <textarea name="message" placeholder="Hi Shashank, I'd like to..." required></textarea>
-    </div>
-
-    <button type="submit" class="mag-btn mag-btn-primary" style="width:100%;justify-content:center">
-      send message →
-    </button>
-
-  </form>
+  </div>
 
 </div>
-      </div>
-      <div class="contact-info-wrap" data-reveal>
-        <a href="mailto:shshank732@gmail.com" class="c-link tilt-card">
-          <div class="c-link-icon">📧</div>
-          <div><div class="c-link-label">EMAIL</div><div class="c-link-val">shshank732@gmail.com</div></div>
-        </a>
-        <a href="https://linkedin.com/in/sha-singh/" target="_blank" class="c-link tilt-card">
-          <div class="c-link-icon">💼</div>
-          <div><div class="c-link-label">LINKEDIN</div><div class="c-link-val">https://www.linkedin.com/in/sha-singh </div></div>
-        </a>
-        <a href="https://shashankelectro-ece.github.io" target="_blank" class="c-link tilt-card">
-          <div class="c-link-icon">🐙</div>
-          <div><div class="c-link-label">GITHUB</div><div class="c-link-val">shashankelectro-ece.github.io</div></div>
-        </a>
-        <div class="tilt-card" style="padding:1.5rem;margin-top:.5rem">
-          <div style="font-family:'Space Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:2px;margin-bottom:.8rem">// CURRENT STATUS</div>
-          <div style="display:flex;flex-direction:column;gap:.5rem;font-size:.85rem;color:var(--muted)">
-            <div>📍 Prayagraj, Uttar Pradesh</div>
-            <div>🟢 Open to full-time / remote</div>
-            <div>⚡ Interested in embedded + cloud roles</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </section>
 
 <footer>
-  <div class="foot-l">Designed & built by <span>Shashank Singh</span></div>
-  <div class="foot-r">electronics engineer · © 2025</div>
-</footer>
+  <div class="foot-l">
+    Designed & built by <span>Shashank Singh</span>
+  </div>
 
-<script>
+  <div class="foot-r">
+    electronics engineer · © 2025
+  </div>
+</footer>
+```
+
+         
+
+
 // ── LOADER ──────────────────────────────────────────────
 const loaderMsgs = ['booting system...','loading modules...','compiling portfolio...','almost ready...'];
 let li = 0, lp = 0;
